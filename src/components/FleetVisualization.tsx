@@ -93,11 +93,11 @@ const FleetVisualization = () => {
   };
   
   return (
-    <div className="bg-slate-800 rounded-xl shadow-xl p-6 animate-fade-in">
+    <div className="bg-white rounded-xl shadow-xl p-6 animate-fade-in">
       <div className="flex flex-wrap justify-between items-center mb-6">
-        <h2 className="text-2xl font-bold text-white mb-2 md:mb-0">
+        <h2 className="text-2xl font-bold text-slate-800 mb-2 md:mb-0">
           Fleet Composition
-          <span className="ml-2 text-sm font-normal text-slate-400">
+          <span className="ml-2 text-sm font-normal text-slate-500">
             ({filteredData.reduce((acc, item) => acc + item.count, 0)} vehicles)
           </span>
         </h2>
@@ -112,7 +112,7 @@ const FleetVisualization = () => {
           
           <div className="ml-2">
             <select 
-              className="bg-slate-700 text-white px-3 py-2 rounded-md text-sm"
+              className="bg-slate-100 text-slate-800 px-3 py-2 rounded-md text-sm"
               value={sortBy}
               onChange={(e) => setSortBy(e.target.value as "count" | "name")}
             >

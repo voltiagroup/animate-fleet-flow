@@ -7,7 +7,7 @@ interface VehicleData {
 
 const fleetData: VehicleData[] = [
   { model: "Hyundai I30 Combi", count: 70, manufacturer: "Hyundai" },
-  { model: "Skoda Octavia", count: 20, manufacturer: "Skoda" },
+  { model: "Skoda Octavia", count: 22, manufacturer: "Skoda" }, // Increased from 20 to 22
   { model: "Hyundai I40 Combi", count: 19, manufacturer: "Hyundai" },
   { model: "Skoda Superb", count: 8, manufacturer: "Skoda" },
   { model: "Skoda Octavia III Combi", count: 7, manufacturer: "Skoda" },
