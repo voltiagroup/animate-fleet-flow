@@ -87,7 +87,7 @@ const FleetVisualization = () => {
       case "hyundai": return "from-blue-400 to-blue-600";
       case "skoda": return "from-green-400 to-green-600";
       case "vw": return "from-slate-400 to-slate-600";
-      case "audi": return "from-red-400 to-red-600";
+      case "audi": return "from-yellow-400 to-yellow-500"; // Changed from red to yellow
       default: return "from-purple-400 to-purple-600";
     }
   };
@@ -95,7 +95,7 @@ const FleetVisualization = () => {
   return (
     <div className="bg-white rounded-xl shadow-xl p-6 animate-fade-in">
       <div className="flex flex-wrap justify-between items-center mb-6">
-        <h2 className="text-2xl font-bold text-slate-800 mb-2 md:mb-0">
+        <h2 className="text-2xl font-bold text-[#26264D] mb-2 md:mb-0">
           Fleet Composition
           <span className="ml-2 text-sm font-normal text-slate-500">
             ({filteredData.reduce((acc, item) => acc + item.count, 0)} vehicles)

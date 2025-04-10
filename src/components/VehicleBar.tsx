@@ -29,12 +29,12 @@ const VehicleBar = ({ vehicle, maxCount, colorClass }: VehicleProps) => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div className="flex items-center mb-1 text-sm text-slate-300">
+      <div className="flex items-center mb-1 text-sm text-gray-800">
         <Car 
           size={16} 
           className={cn(
             "mr-2 transition-transform duration-300", 
-            isHovered ? "text-white scale-125" : "text-slate-400"
+            isHovered ? "text-[#26264D] scale-125" : "text-slate-400"
           )} 
         />
         <span className="truncate max-w-[150px] sm:max-w-[250px] md:max-w-full">

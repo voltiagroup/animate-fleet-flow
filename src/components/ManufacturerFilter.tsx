@@ -24,7 +24,7 @@ const ManufacturerFilter = ({
           size="sm"
           onClick={() => onToggle(manufacturer)}
           className={cn(
-            "transition-all duration-300 border-slate-600",
+            "transition-all duration-300 border-0", // Removed border
             selectedManufacturers.includes(manufacturer) || selectedManufacturers.length === 0
               ? `bg-gradient-to-r ${getColor(manufacturer)} text-white shadow-md`
               : "bg-slate-800 text-slate-400 hover:text-white"
@@ -39,7 +39,7 @@ const ManufacturerFilter = ({
           variant="outline"
           size="sm"
           onClick={() => selectedManufacturers.forEach(m => onToggle(m))}
-          className="bg-slate-800 text-slate-400 hover:text-white border-slate-600"
+          className="bg-slate-800 text-slate-400 hover:text-white border-0" // Removed border
         >
           Clear
         </Button>
